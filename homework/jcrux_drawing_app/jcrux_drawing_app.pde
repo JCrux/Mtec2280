@@ -51,6 +51,11 @@ void keyPressed() {
     background(0);
   }
   
+  // if the key that is pressed is N then background is ...
+  if(key == 'n' ) {
+    background(255);
+  }
+  
   if(key == 'x') {
     stroke(random(255),random(255),random(255));
   }
