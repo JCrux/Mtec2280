@@ -22,7 +22,7 @@ void loop() {
  //output minimum
  //output maximun
 
- int mappedVal = map(val, 0, 1023, 5000, 16000); // cahnge the number from1 to 10 with mappedVal *= 1000
+ int mappedVal = map(val, 0, 1023, 5000, 16000); // change the number from1 to 10 with mappedVal *= 1000
 
 //mappedVal *= 1000
 
