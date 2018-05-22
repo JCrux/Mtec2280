@@ -1,0 +1,57 @@
+/*
+*
+*Create a sketch that blinks 2 LED's. The program should have states
+*Variables should be established for the digital pins that will be used.
+*Challenge~~~ use photo cell to change led states
+*/
+
+
+
+int PhotoPin = A0;
+int PhotoValue = 0;
+
+int red = 4;
+int blue = 4;
+
+
+
+void setup() {
+
+  pinMode(red,OUTPUT);
+  pinMode(blue,OUTPUT);
+  
+
+  }
+
+void loop() {
+	
+	PhotoValue = analogRead(PhotoPin);
+	Serial.println(PhotoValue);
+
+	if (PhotoValue > 60){
+    digitalWrite(13, LOW);
+    digitalWrite(10, LOW);
+   
+  }
+
+    //red
+    else if (PhotoValue > "specified range"){
+    
+    digitalWrite(13, HIGH);
+    digitalWrite(10, LOW);
+   
+      
+    }
+     
+   
+
+     //blue
+     else if (PhotoValue >"specified range"){
+    digitalWrite(red, LOW);
+    digitalWrite(blue, LOW);
+      
+    }
+
+   
+      
+}
