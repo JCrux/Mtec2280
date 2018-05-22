@@ -22,6 +22,8 @@ rect(725, 0, 105, 500);
 rect(830, 0, 120, 500);}
 
 void draw(){
+ 
+ //hz = horizontal
  int hzX1 = 0;
  int hzY1 = 0;
  
@@ -32,6 +34,8 @@ void draw(){
     line( hzX1, hzY1 , hzX2 ,  hzY1);
    hzY1 =  hzY1 + 3;
 }
+
+//dg = diagonal
 int dgX1 = 225;
 int dgY1 = 0;
 
